@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Обратная связь</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="feedback-page">
+
+    <div class="box">
+        <h1>Форма обратной связи</h1>
+
+        <form action="https://httpbin.org/post" method="post" enctype="multipart/form-data">
+
+            <p>
+                <label for="fio">ФИО:</label><br>
+                <input type="text" id="fio" name="fio" required>
+            </p>
+
+            <p>
+                <label for="email">Email:</label><br>
+                <input type="text" id="email" name="email" required>
+            </p>
+
+            <p>
+                Откуда вы узнали о нас?<br>
+                <input type="radio" id="src1" name="source" value="friends" checked>
+                <label for="src1">От друзей</label><br>
+                <input type="radio" id="src2" name="source" value="internet">
+                <label for="src2">Из интернета</label><br>
+                <input type="radio" id="src3" name="source" value="advert">
+                <label for="src3">Из рекламы</label>
+            </p>
+
+            <p>
+                <label for="type">Тип обращения:</label><br>
+                <select id="type" name="type">
+                    <option value="complaint">Жалоба</option>
+                    <option value="suggestion">Предложение</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="message">Текст сообщения:</label><br>
+                <textarea id="message" name="message" rows="6" cols="40"></textarea>
+            </p>
+
+            <p>
+                <label for="file">Вложение:</label><br>
+                <input type="file" id="file" name="file">
+            </p>
+
+            <p>
+                <input type="checkbox" id="agree" name="agree" value="yes" required>
+                <label for="agree">Даю согласие на обработку персональных данных</label>
+            </p>
+
+            <p>
+                <input type="submit" value="Отправить">
+            </p>
+
+        </form>
+
+        <p><a href="login.html">Перейти к форме входа</a></p>
+    </div>
+
+</body>
+</html>

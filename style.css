@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #333333;
+}
+
+input[type="text"],
+input[type="password"],
+select,
+textarea {
+    width: 300px;
+    padding: 5px;
+    border: 1px solid #999999;
+}
+
+input[type="submit"] {
+    background-color: #2a7ae2;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #1a5bb0;
+}
+
+a {
+    color: #2a7ae2;
+}
+
+/* ---------- Форма обратной связи ---------- */
+
+.feedback-page {
+    background-color: #eeeeee;
+}
+
+.box {
+    width: 400px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+}
+
+/* ---------- Форма входа ---------- */
+
+.login-page {
+    background-image: url("bg.jpg");
+    background-color: #556677;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+
+    /* центрируем форму по центру страницы */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box {
+    width: 300px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.login-box input[type="text"],
+.login-box input[type="password"] {
+    width: 280px;
+}
